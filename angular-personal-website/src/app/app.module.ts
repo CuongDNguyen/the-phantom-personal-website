@@ -13,7 +13,7 @@ import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from "@angular/material/input";
 import { MatListModule } from '@angular/material/list';
 import { AboutComponent } from './about/about.component';
-import { NavbarComponent } from './navbar/navbar.component';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 
 const routes: Routes = [
@@ -25,7 +25,6 @@ const routes: Routes = [
   declarations: [
     AppComponent,
     AboutComponent,
-    NavbarComponent
   ],
   imports: [
     BrowserModule,
@@ -38,7 +37,8 @@ const routes: Routes = [
     MatSidenavModule,
     MatCardModule,
     MatFormFieldModule,
-    MatInputModule
+    MatInputModule,
+    NgbModule
   ],
   providers: [],
   bootstrap: [AppComponent]}
